@@ -1,0 +1,56 @@
+.user_info {
+  margin: 0;
+  display: flex;
+  text-align: center;
+  margin-left: 350px;
+  margin-top: 10px;
+  border: #ddd solid 2px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  box-shadow: #dddd;
+  max-height: 700px;
+}
+input {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+/* .submit-btn {
+  border: black;
+  border-radius: 20px;
+  background-color: pink;
+} */
+from {
+  display: block;
+  position: relative;
+  background-color: white;
+}
+from::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: white;
+}
+from > h5 {
+  color: #888;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+from input {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #ddd;
+}
+from button {
+  height: 30px;
+  font-size: 20px;
+  border: none;
+  background: pink;
+  width: 20vw;
+  font-weight: 500;
+  color: black;
+  border-radius: 30px;
+}
