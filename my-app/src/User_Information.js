@@ -11,12 +11,18 @@ function User_Information() {
       </div>
       <div className="geting_form">
         <from>
-          <h5>FirstName</h5>
+          <h5>FirstName:</h5>
           <input type="text" placeholder="FirstName" />
           <h5>lastName</h5>
           <input type="text" placeholder="LastName" />
-          <h5>Gender</h5>
-          <input type="text" placeholder="Gender" />
+          {/* <h5>Gender</h5>
+          <input type="text" placeholder="Gender" /> */}
+          <h5>Gender :</h5>
+          <select defaultValue="Select Gender">
+            <option defaultValue>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
           <h5>age</h5>
           <input type="number" />
           <h5>Height</h5>
