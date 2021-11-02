@@ -35,7 +35,9 @@ function User_Information() {
           <input type="text" placeholder="City" />
           <h5>Medical Issue</h5>
           <input type="text" />
-          <button className="submit-btn">Submit</button>
+          <p className="btn">
+            <button className="submit-btn">Submit</button>
+          </p>
         </from>
       </div>
     </div>
