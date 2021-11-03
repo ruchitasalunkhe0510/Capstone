@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./User_Info.css";
 
-function User_Information() {
+const User_Information = () => {
+  const [FirstName, setFirstName] = useState(" ");
   return (
     <div className="user_info">
       <div className="info-design">
@@ -10,9 +11,14 @@ function User_Information() {
         </div>
       </div>
       <div className="geting_form">
-        <from>
+        <form>
           <h5>FirstName:</h5>
-          <input type="text" placeholder="FirstName" />
+          <input
+            type="text"
+            placeholder="FirstName"
+            value={FirstName}
+            onChange={(e) => setFirstName(e.target.value)}
+          />
           <h5>lastName</h5>
           <input type="text" placeholder="LastName" />
           {/* <h5>Gender</h5>
@@ -38,10 +44,10 @@ function User_Information() {
           <p className="btn">
             <button className="submit-btn">Submit</button>
           </p>
-        </from>
+        </form>
       </div>
     </div>
   );
-}
+};
 
 export default User_Information;

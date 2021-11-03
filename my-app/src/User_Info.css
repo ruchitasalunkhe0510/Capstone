@@ -60,24 +60,24 @@ select {
   color: rgb(10, 10, 10);
   font-family: Arial, Helvetica, sans-serif;
 } */
-*/ from {
+*/ form {
   display: block;
   position: relative;
   background-color: white;
 }
-from::after {
+form::after {
   /* content: " "; */
   display: block;
   position: absolute;
   background-color: white;
 }
-from > h5 {
+form > h5 {
   color: black;
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 3px;
 }
-from input {
+form input {
   width: 80%;
   padding: 12px 20px;
   margin: 5px 0;
@@ -88,7 +88,7 @@ from input {
   color: rgb(10, 10, 10);
   font-family: Arial, Helvetica, sans-serif;
 }
-from button {
+form button {
   width: 30%;
   background-color: #ddd;
   border: none;

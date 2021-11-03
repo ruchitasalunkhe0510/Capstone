@@ -1,0 +1,155 @@
+import React, { Component } from "react";
+import "./User_Info.css";
+
+export class Info extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      FirstName: "",
+      lastName: "",
+      Gender: "",
+      age: "",
+      Weight: "",
+      Height: "",
+      State: "",
+      City: "",
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  firsthandler = (event) => {
+    this.setState({
+      FirstName: event.target.value,
+    });
+  };
+  lasthandler = (event) => {
+    this.setState({
+      lastName: event.target.value,
+    });
+  };
+  genderhandler = (event) => {
+    this.setState({
+      Gender: event.target.value,
+    });
+  };
+  agehandler = (event) => {
+    this.setState({
+      age: event.target.value,
+    });
+  };
+  Weighthandler = (event) => {
+    this.setState({
+      Weight: event.target.value,
+    });
+  };
+  Heighthandler = (event) => {
+    this.setState({
+      Height: event.target.value,
+    });
+  };
+  Statehandler = (event) => {
+    this.setState({
+      state: event.target.value,
+    });
+  };
+  Cityhandler = (event) => {
+    this.setState({
+      City: event.target.value,
+    });
+  };
+  // Medical-Issue = (event) => {
+  //     this.setState({
+  //         Medical-Issue: event.target.value
+  //     })
+  // }
+  handleSubmit = (event) => {
+    console.log(this.state);
+    this.setState({
+      FirstName: "",
+      lastName: "",
+      Gender: "",
+      age: "",
+      Weight: "",
+      Height: "",
+      State: "",
+      City: "",
+    });
+    event.preventDefault();
+  };
+
+  render() {
+    return (
+      <div className="user_info">
+        <div className="info-design">
+          <div className="inner-text">
+            <h2>User Detail</h2>
+          </div>
+        </div>
+        <div className="geting_form">
+          <form onSubmit={this.handleSubmit}>
+            <h5>FirstName:</h5>
+            <input
+              type="text"
+              value={this.state.FirstName}
+              onChange={this.firsthandler}
+              placeholder="FirstName"
+            />
+            <h5>lastName</h5>
+            <input
+              type="text"
+              value={this.state.lastName}
+              onChange={this.lasthandler}
+              placeholder="LastName"
+            />
+            {/* <h5>Gender</h5>
+                    <input type="text" placeholder="Gender" /> */}
+            <h5>Gender :</h5>
+            <select onChange={this.genderhandler} defaultValue="Select Gender">
+              <option defaultValue>Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            <h5>age</h5>
+            <input
+              type="number"
+              value={this.state.age}
+              onChange={this.agehandler}
+            />
+            <h5>Height</h5>
+            <input
+              type="number"
+              value={this.state.Height}
+              onChange={this.Heighthandler}
+            />
+            <h5>Weight</h5>
+            <input
+              type="number"
+              value={this.state.Weight}
+              onChange={this.Weighthandler}
+            />
+            <h5>State</h5>
+            <input
+              type="text"
+              value={this.state.state}
+              onChange={this.Statehandler}
+              placeholder="State"
+            />
+            <h5>City</h5>
+            <input
+              type="text"
+              value={this.state.City}
+              onChange={this.Cityhandler}
+              placeholder="City"
+            />
+            <h5>Medical-Issue</h5>
+            <input type="text" />
+            <p className="btn">
+              <button className="submit-btn">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Info;
