@@ -41,6 +41,11 @@ class Login extends Component {
   render() {
     return (
       <div className="login">
+        <img
+          className="logo_design"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfiZ6VsRmTqPByLFUme3DD2hmlYLgd6kUNfQ&usqp=CAU"
+          alt="logo"
+        />
         <form onSubmit={this.handleSubmit}>
           <h1>User Registration</h1>
           <label>FirstName :</label>{" "}

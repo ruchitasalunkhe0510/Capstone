@@ -2,6 +2,7 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
 }
 h2 {
   font-size: 38px;
@@ -24,8 +25,9 @@ h2 {
 
 input[type="text"] {
   width: 80%;
+  padding-top: 23px;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 5px 0;
   box-sizing: border-box;
   border: none;
   border-radius: 15px;
