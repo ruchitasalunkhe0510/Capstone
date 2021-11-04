@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
-// import Info from "./Info";
+import Info from "./Info";
 // import Login from "./Login";
-import SignUp from "./SignUp";
+// import SignUp from "./SignUp";
 
 function App() {
   return (
     <div className="App">
-      {/* <Info /> */}
+      <Info />
       {/* <Login /> */}
-      <SignUp />
+      {/* <SignUp /> */}
     </div>
   );
 }

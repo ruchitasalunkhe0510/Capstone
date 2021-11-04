@@ -6,21 +6,27 @@ class Login extends Component {
     super(props);
 
     this.state = {
-      firstName: "",
-      lastName: "",
+      name: "",
+      email: "",
+      mobile: "",
       password: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  firsthandler = (event) => {
+  namehandler = (event) => {
     this.setState({
-      firstName: event.target.value,
+      name: event.target.value,
     });
   };
-  lasthandler = (event) => {
+  emailhandler = (event) => {
     this.setState({
-      lastName: event.target.value,
+      email: event.target.value,
+    });
+  };
+  mobilehandler = (event) => {
+    this.setState({
+      mobile: event.target.value,
     });
   };
   passwordhandler = (event) => {
@@ -32,8 +38,9 @@ class Login extends Component {
   handleSubmit = (event) => {
     console.log(this.state);
     this.setState({
-      firstName: "",
-      lastName: "",
+      name: "",
+      email: "",
+      mobile: "",
       password: "",
     });
     event.preventDefault();
@@ -48,20 +55,28 @@ class Login extends Component {
         />
         <form onSubmit={this.handleSubmit}>
           <h1>User Registration</h1>
-          <label>FirstName :</label>{" "}
+          <label>Name :</label>{" "}
           <input
             type="text"
-            value={this.state.firstName}
-            onChange={this.firsthandler}
-            placeholder="FirstName..."
+            value={this.state.name}
+            onChange={this.namehandler}
+            placeholder="name..."
           />
           <br />
-          <label>LastName :</label>{" "}
+          <label>Email-id :</label>{" "}
           <input
             type="text"
-            value={this.state.lastName}
-            onChange={this.lasthandler}
-            placeholder="LastName..."
+            value={this.state.email}
+            onChange={this.emailhandler}
+            placeholder="email..."
+          />
+          <br />
+          <label>Mobile No :</label>{" "}
+          <input
+            type="text"
+            value={this.state.mobile}
+            onChange={this.mobilehandler}
+            placeholder="Mobile No..."
           />
           <br />
           <label>Password :</label>{" "}

@@ -10,6 +10,7 @@ export class Info extends Component {
       gender: "",
       age: "",
       weight: "",
+      ideal: "",
       height: "",
       state: "",
       city: "",
@@ -37,6 +38,7 @@ export class Info extends Component {
       gender: "",
       age: "",
       weight: "",
+      ideal: "",
       height: "",
       state: "",
       city: "",
@@ -51,6 +53,7 @@ export class Info extends Component {
       gender,
       age,
       weight,
+      ideal,
       height,
       state,
       city,
@@ -106,11 +109,19 @@ export class Info extends Component {
               value={height}
               onChange={this.handleChange}
             />
+
             <h5>Weight</h5>
             <input
               type="number"
               name="weight"
               value={weight}
+              onChange={this.handleChange}
+            />
+            <h5>Ideal Weight</h5>
+            <input
+              type="number"
+              name="ideal"
+              value={ideal}
               onChange={this.handleChange}
             />
             <h5>State</h5>
