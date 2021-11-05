@@ -1,13 +1,15 @@
 import React from "react";
 import "./App.css";
-import Info from "./Info";
+// import Info from "./Info";
 // import Login from "./Login";
 // import SignUp from "./SignUp";
+import Home from "./Home";
 
 function App() {
   return (
     <div className="App">
-      <Info />
+      <Home />
+      {/* <Info /> */}
       {/* <Login /> */}
       {/* <SignUp /> */}
     </div>
