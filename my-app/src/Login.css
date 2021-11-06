@@ -6,6 +6,7 @@ body {
 }
 h1 {
   font-size: 38px;
+  display: flex;
 }
 .logo_design {
   height: 12vh;
@@ -87,4 +88,18 @@ select {
   padding: 18px;
   text-align: center;
   box-shadow: 0 8px 6px -6px black;
+}
+.login_btn {
+  color: cadetblue;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.btn {
+  border-radius: 16px;
+  height: 4vh;
+  cursor: pointer;
+  background-color: cadetblue;
+  border: none;
+
+  /* width: 0px; */
 }

@@ -1,9 +1,13 @@
+.body {
+  margin: 0;
+}
 .home {
   background-color: cadetblue;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 20px;
+  margin: 0;
 }
 .home_first {
   /* padding-right: -100px;  */
@@ -33,19 +37,46 @@
   padding-bottom: 5px;
 }
 .home_first1 > span {
-  padding-right: 250px;
+  padding-left: -150px;
   align-items: center;
 }
 .home_second {
-  border: none;
+  color: white;
+}
+.home_third {
+  color: white;
+}
+.home_forth {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+.home_forth > .MuiSvgIcon-root {
+  color: white;
+}
+.home_five {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  align-items: center;
+}
+.home_five > .MuiSvgIcon-root {
+  color: white;
+  align-items: center;
+}
+.home_six1 {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
 }
 .home_six > button {
   background-color: white;
-  width: 9vw;
+  border-radius: 35px;
+  width: 8vw;
   outline: none;
   font-weight: bold;
   cursor: pointer;
   font-size: 20px;
-  padding: 7px;
-  color: #2874f0;
+  padding: 8px;
+  color: cadetblue;
 }

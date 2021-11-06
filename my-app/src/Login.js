@@ -1,32 +1,22 @@
 import React, { Component } from "react";
 import "./Login.css";
+import { Link } from "react-router-dom";
+import SignUp from "./SignUp";
 
 class Login extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      name: "",
       email: "",
-      mobile: "",
       password: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  namehandler = (event) => {
-    this.setState({
-      name: event.target.value,
-    });
-  };
   emailhandler = (event) => {
     this.setState({
       email: event.target.value,
-    });
-  };
-  mobilehandler = (event) => {
-    this.setState({
-      mobile: event.target.value,
     });
   };
   passwordhandler = (event) => {
@@ -38,9 +28,7 @@ class Login extends Component {
   handleSubmit = (event) => {
     console.log(this.state);
     this.setState({
-      name: "",
       email: "",
-      mobile: "",
       password: "",
     });
     event.preventDefault();
@@ -50,33 +38,17 @@ class Login extends Component {
       <div className="login">
         <img
           className="logo_design"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfiZ6VsRmTqPByLFUme3DD2hmlYLgd6kUNfQ&usqp=CAU"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0i8ilFf2usonsLDFkbFQqXTuYq--BVkdn1Q&usqp=CAU"
           alt="logo"
         />
         <form onSubmit={this.handleSubmit}>
-          <h1>User Registration</h1>
-          <label>Name :</label>{" "}
-          <input
-            type="text"
-            value={this.state.name}
-            onChange={this.namehandler}
-            placeholder="name..."
-          />
-          <br />
+          <h1>Sign-Up</h1>
           <label>Email-id :</label>{" "}
           <input
             type="text"
             value={this.state.email}
             onChange={this.emailhandler}
             placeholder="email..."
-          />
-          <br />
-          <label>Mobile No :</label>{" "}
-          <input
-            type="text"
-            value={this.state.mobile}
-            onChange={this.mobilehandler}
-            placeholder="Mobile No..."
           />
           <br />
           <label>Password :</label>{" "}
@@ -87,8 +59,13 @@ class Login extends Component {
             placeholder="Password..."
           />
           <br />
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Submit" onClick={SignUp} />
         </form>
+        <div className="login_btn">
+          <Link to="/SignUp">
+            <button className="btn">Create an account</button>
+          </Link>
+        </div>
       </div>
     );
   }

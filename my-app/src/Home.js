@@ -1,13 +1,19 @@
 import React from "react";
 import "./Home.css";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import HelpIcon from "@material-ui/icons/Help";
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <div className="home">
-      <img
-        className="home_first"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0i8ilFf2usonsLDFkbFQqXTuYq--BVkdn1Q&usqp=CAU"
-        alt="logo"
-      />
+      <Link to="/">
+        <img
+          className="home_first"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0i8ilFf2usonsLDFkbFQqXTuYq--BVkdn1Q&usqp=CAU"
+          alt="logo"
+        />
+      </Link>
       {/* <div className="home_first1">
         <span
           style={{
@@ -19,20 +25,30 @@ function Home() {
           Healthy Diet
         </span>
       </div> */}
+
       <div className="home_second">
-        <button>Home</button>
+        <span>Home</span>
       </div>
       <div className="home_third">
-        <button>About us</button>
+        <span>About us</span>
       </div>
+
       <div className="home_forth">
-        <button>Diet Plan</button>
+        <span>Diet Plan</span>
+        <ExpandMoreIcon />
       </div>
       <div className="home_five">
-        <button>Exercise Plan</button>
+        <span>Exercise Plan</span>
+        <ExpandMoreIcon />
       </div>
-      <div className="home_six">
-        <button>Login</button>
+      <Link to={"/login"}>
+        <div className="home_six">
+          <button>Login</button>
+        </div>
+      </Link>
+      <div className="home_six1">
+        <span>Help</span>
+        <HelpIcon />
       </div>
     </div>
   );
