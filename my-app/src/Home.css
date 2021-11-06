@@ -53,6 +53,8 @@
 }
 .home_forth > .MuiSvgIcon-root {
   color: white;
+  /* display: flex; */
+  align-items: center;
 }
 .home_five {
   color: white;

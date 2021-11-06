@@ -1,0 +1,13 @@
+.display_first {
+  height: 90vh;
+  /* width: 90%; */
+  display: flex;
+  max-width: 100%;
+}
+.display_ad {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  max-width: 2500px;
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));    */
+}
