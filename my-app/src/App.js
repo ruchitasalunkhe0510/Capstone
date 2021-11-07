@@ -10,10 +10,9 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    
-      <div className="App">
-       {/* <div className="App_file"> */}
-       <Router>
+    <div className="App">
+      {/* <div className="App_file"> */}
+      <Router>
         <Home />
         <Switch>
           <Route path="/login">
@@ -26,13 +25,12 @@ function App() {
             <Info />
           </Route>
           <Display />
-          <Footer />
         </Switch>
-        </Router>
-        {/* </div> */}
-        {/* <Footer/> */}
-      </div>
-    
+        <Footer />
+      </Router>
+      {/* </div> */}
+      {/* <Footer /> */}
+    </div>
   );
 }
 

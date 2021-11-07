@@ -1,6 +1,6 @@
 .display_first {
   height: 90vh;
-  /* width: 90%; */
+  width: 115vw;
   display: flex;
   max-width: 100%;
 }
@@ -19,45 +19,30 @@ p > description {
   text-align: center;
 }
 .container {
-  /* background-color: wheat; */
   font-size: 20px;
   /* display: flex; */
   align-items: center;
   padding-bottom: 0px;
-  height: 90%;
-  width: 90%;
+  height: 80vh;
+  width: 100vw;
   border-radius: 5%;
+  /* padding-top: 25px; */
 }
 .btn_start {
-  border-radius: 15px;
-  padding: 15px;
+  border-radius: 30px;
   background-color: cadetblue;
-  height: 15px;
-  width: 80px;
+  height: 40px;
+  width: 10vw;
   color: white;
-  /* align-items: center; */
-  display: flex;
-  margin-left: 180px;
-  font-size: 10px;
-  margin-top: 20px;
+  font-size: 20px;
+  margin-top: 25px;
   border: none;
+  font-weight: 600;
+  box-shadow: 0 5px 10px 0 gray;
 }
-/* .btn_start {
-  display: grid;
-  align-items: center;
-  /* padding: 30px 20px; */
-/* margin-right: 90px; */
-/* background-color: black;
-  border-radius: 30px; */
-/* } */
-*/ .weight_loss {
+
+.weight_loss {
   height: 60vh;
-  /* height: 110%; */
   width: 60%;
   display: flex;
-  /* max-height: 100%; */
 }
-/* .btn_des {
-  width: "30%";
-  background-color: "cadetblue";
-} */
