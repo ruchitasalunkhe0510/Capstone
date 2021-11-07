@@ -4,15 +4,16 @@ import Info from "./Info";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import Home from "./Home";
-import Display from "./Display"
+import Display from "./Display";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import { Switch, Route } from "react-router-dom";
-// import { Routes, Route } from "react-router-dom";
+import Footer from "./Footer";
 
 function App() {
   return (
-    <Router>
+    
       <div className="App">
+       {/* <div className="App_file"> */}
+       <Router>
         <Home />
         <Switch>
           <Route path="/login">
@@ -24,10 +25,14 @@ function App() {
           <Route path="/info">
             <Info />
           </Route>
-          <Display/>
+          <Display />
+          <Footer />
         </Switch>
+        </Router>
+        {/* </div> */}
+        {/* <Footer/> */}
       </div>
-    </Router>
+    
   );
 }
 

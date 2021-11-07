@@ -24,9 +24,9 @@ function Display() {
             rate of fat loss that can only be proportional to the caloric
             deficit.
           </p>
-          <div className="btn_start">
-            <button className="btn_des">Get Start</button>
-          </div>
+          {/* <div className="btn_start"> */}
+          <button className="btn_start">Get Start</button>
+          {/* </div> */}
         </div>
       </div>
       <div className="weight_loss">
