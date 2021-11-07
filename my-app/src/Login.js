@@ -42,7 +42,7 @@ class Login extends Component {
           alt="logo"
         />
         <form onSubmit={this.handleSubmit}>
-          <h1>Sign-Up</h1>
+          <h1>User Sign-Up</h1>
           <label>Email-id :</label>{" "}
           <input
             type="text"

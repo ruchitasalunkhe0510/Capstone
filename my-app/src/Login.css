@@ -7,7 +7,17 @@ body {
 h1 {
   font-size: 38px;
   display: flex;
+  font-weight: 800;
 }
+/* .header {
+  display: flex;
+  color: black;
+  /* align-items: center; */
+/* text-align: center;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-right: 10px;
+} */
 .logo_design {
   height: 12vh;
   display: flex;
