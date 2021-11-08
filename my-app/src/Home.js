@@ -3,7 +3,7 @@ import "./Home.css";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import HelpIcon from "@material-ui/icons/Help";
 import { Link } from "react-router-dom";
-
+// import Diet from "./Diet";
 function Home() {
   return (
     <div className="home">
@@ -32,11 +32,12 @@ function Home() {
       <div className="home_third">
         <span>About us</span>
       </div>
-
-      <div className="home_forth">
-        <span>Diet Plan</span>
-        <ExpandMoreIcon />
-      </div>
+      <Link to={"/diet"}>
+        <div className="home_forth">
+          <span>Diet Plan</span>
+          <ExpandMoreIcon />
+        </div>
+      </Link>
       <div className="home_five">
         <span>Exercise Plan</span>
         <ExpandMoreIcon />

@@ -5,8 +5,8 @@ import Login from "./Login";
 import SignUp from "./SignUp";
 import Home from "./Home";
 import Display from "./Display";
+import Diet from "./Diet";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Footer from "./Footer";
 
 function App() {
   return (
@@ -14,8 +14,10 @@ function App() {
       {/* <div className="App_file"> */}
       <Router>
         <Home />
-
         <Switch>
+          <Route exact path="/diet">
+            <Diet />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>
@@ -28,12 +30,12 @@ function App() {
           <Route path="/">
             <Display />
           </Route>
-          {/* <Route path="/">
-            <Home />
-            <Footer /> */}
-          {/* </Route> */}
+
+          {/* <Route path="/diet">
+            <Diet />
+          </Route> */}
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
       {/* </div> */}
       {/* <Footer /> */}

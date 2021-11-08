@@ -149,7 +149,7 @@ export class Info extends Component {
             />
             <p className="btn">
               <button className="submit-btn" onClick={this.handleSubmit}>
-                Generate Plan
+                Submit
               </button>
             </p>
           </form>

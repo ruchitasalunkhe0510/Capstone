@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Info from "./Info";
 import "./Display.css";
+import Footer from "./Footer";
 function Display() {
   return (
     <div className="display">
@@ -57,6 +58,7 @@ function Display() {
           alt="image5"
         />
       </div>
+      <Footer />
     </div>
   );
 }
