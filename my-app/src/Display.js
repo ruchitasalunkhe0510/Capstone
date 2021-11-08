@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Info from "./Info";
 import "./Display.css";
 function Display() {
   return (
@@ -25,7 +27,11 @@ function Display() {
             deficit.
           </p>
           {/* <div className="btn_start"> */}
-          <button className="btn_start">Get Start</button>
+          <Link to="/Info">
+            <button className="btn_start" onClick={Info}>
+              Get Start
+            </button>
+          </Link>
           {/* </div> */}
         </div>
       </div>
