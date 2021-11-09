@@ -40,6 +40,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding-bottom: 30px;
+  box-shadow: 0 5px 15px 0 gray;
 }
 input[type="text"] {
   width: 60%;

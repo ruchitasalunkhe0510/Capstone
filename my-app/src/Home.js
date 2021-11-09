@@ -32,7 +32,7 @@ function Home() {
       <div className="home_third">
         <span>About us</span>
       </div>
-      <Link to={"/diet"}>
+      <Link to={"/dietplan"}>
         <div className="home_forth">
           <span>Diet Plan</span>
           <ExpandMoreIcon />

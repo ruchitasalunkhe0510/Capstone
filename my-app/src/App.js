@@ -6,6 +6,7 @@ import SignUp from "./SignUp";
 import Home from "./Home";
 import Display from "./Display";
 import Diet from "./Diet";
+import DietPlan from "./DietPlan";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
       <Router>
         <Home />
         <Switch>
-          <Route exact path="/diet">
-            <Diet />
+          <Route exact path="/dietplan">
+            <DietPlan />
           </Route>
           <Route path="/login">
             <Login />
@@ -31,9 +32,10 @@ function App() {
             <Display />
           </Route>
 
-          {/* <Route path="/diet">
+          <Route path="/diet">
+            <DietPlan />
             <Diet />
-          </Route> */}
+          </Route>
         </Switch>
         {/* <Footer /> */}
       </Router>
