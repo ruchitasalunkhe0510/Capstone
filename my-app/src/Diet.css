@@ -4,4 +4,81 @@
 }
 .diet_title {
   color: lightcoral;
+  margin-right: 10%;
+}
+.breakfast {
+  background-color: white;
+  padding-top: 10px;
+  margin-left: 300px;
+  height: 70%;
+  width: 40%;
+  display: flex;
+  /* text-align: center; */
+  border: #ddd solid 2px;
+  border-radius: 35px;
+  box-sizing: border-box;
+  /* box-shadow: #dddd 2px 3px; */
+  justify-content: space-evenly;
+  margin-top: 3%;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  box-shadow: 0 5px 15px 0 gray;
+}
+.lunch {
+  background-color: white;
+  padding-top: 10px;
+  margin-left: 300px;
+  height: 70%;
+  width: 40%;
+  display: flex;
+  /* text-align: center; */
+  /* border: #ddd solid 2px; */
+  border-radius: 35px;
+  box-sizing: border-box;
+  /* box-shadow: #dddd 2px 3px; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  padding-bottom: 30px;
+  box-shadow: 0 5px 15px 0 gray;
+}
+.dinner {
+  background-color: white;
+  padding-top: 10px;
+  margin-left: 300px;
+  height: 70%;
+  width: 40%;
+  display: flex;
+  /* text-align: center; */
+  /* border: #ddd solid 2px; */
+  border-radius: 35px;
+  box-sizing: border-box;
+  /* box-shadow: #dddd 2px 3px; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  padding-bottom: 30px;
+  box-shadow: 0 5px 15px 0 gray;
+}
+.snack {
+  background-color: white;
+  padding-top: 10px;
+  margin-left: 300px;
+  height: 70%;
+  width: 40%;
+  display: flex;
+  /* text-align: center; */
+  /* border: #ddd solid 2px; */
+  border-radius: 35px;
+  box-sizing: border-box;
+  /* box-shadow: #dddd 2px 3px; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  padding-bottom: 30px;
+  box-shadow: 0 5px 15px 0 gray;
 }

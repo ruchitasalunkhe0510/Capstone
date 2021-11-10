@@ -59,6 +59,7 @@
   height: 15%;
   width: 30%;
   border-color: orange;
+  color: orange;
 }
 .middle > .button > .MuiSvgIcon-root {
   padding-bottom: 10px;

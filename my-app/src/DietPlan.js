@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Diet from "./Diet";
 import "./DietPlan.css";
 import AutorenewIcon from "@material-ui/icons/Autorenew";
 import BlurCircularIcon from "@material-ui/icons/BlurCircular";
@@ -34,6 +33,7 @@ function DietPlan() {
           <AutorenewIcon />
           <BlurCircularIcon />
         </div>
+
         <div className="middle">
           <h3>This day doesn't have a meal plan yet.</h3>
           <Link to={"/diet"}>

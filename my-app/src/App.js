@@ -16,6 +16,10 @@ function App() {
       <Router>
         <Home />
         <Switch>
+          <Route exact path="/diet">
+            <Diet />
+            {/* <DietPlan /> */}
+          </Route>
           <Route exact path="/dietplan">
             <DietPlan />
           </Route>
@@ -30,11 +34,6 @@ function App() {
           </Route>
           <Route path="/">
             <Display />
-          </Route>
-
-          <Route path="/diet">
-            <DietPlan />
-            <Diet />
           </Route>
         </Switch>
         {/* <Footer /> */}
