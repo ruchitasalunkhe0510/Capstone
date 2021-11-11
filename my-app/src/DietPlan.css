@@ -25,9 +25,12 @@
   /* align-items: center; */
   margin-left: 60%;
   /* height: 10px; */
-  /* margin-bottom: 10%; */
+  margin-top: 0;
   /* margin-bottom: 10%; */
   /* padding-bottom: 10%; */
+}
+.plan > .MuiSvgIcon-root {
+  margin-top: 0;
 }
 .title > button {
   display: flex;

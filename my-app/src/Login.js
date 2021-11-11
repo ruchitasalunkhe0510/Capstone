@@ -37,7 +37,7 @@ class Login extends Component {
     return (
       <div className="login">
         <img
-          className="logo_design"
+          className="login_logo"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0i8ilFf2usonsLDFkbFQqXTuYq--BVkdn1Q&usqp=CAU"
           alt="logo"
         />
