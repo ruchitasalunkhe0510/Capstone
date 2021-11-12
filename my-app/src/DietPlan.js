@@ -13,6 +13,10 @@ function DietPlan() {
   return (
     <div className="dietplan">
       <div className="title">
+        {/* <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThY9skHMsQXXbn0mwzunwdUwL5Mdt0LlCn5Q&usqp=CAU"
+          alt="back"
+        /> */}
         <h2>Meal Planner</h2>
         {/* <button>
           <CreateIcon /> Meal Layout
@@ -25,6 +29,7 @@ function DietPlan() {
         </button> */}
       </div>
       <div className="date1">
+        {/* <h2>Meal Planner</h2> */}
         <div className="date">
           <h5>Sunday</h5>
           <h1>7</h1>

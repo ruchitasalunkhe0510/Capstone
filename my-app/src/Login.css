@@ -5,9 +5,10 @@ body {
   padding-top: 20px;
 }
 h1 {
-  font-size: 38px;
+  font-size: 36px;
   display: flex;
   font-weight: 800;
+  /* margin-left: 30%; */
 }
 /* .header {
   display: flex;

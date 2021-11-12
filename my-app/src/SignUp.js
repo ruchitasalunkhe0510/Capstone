@@ -55,7 +55,7 @@ class SignUp extends Component {
           alt="logo"
         />
         <form onSubmit={this.handleSubmit}>
-          <h1>User Registration</h1>
+          <h1>Login Page</h1>
           <label>Name :</label>{" "}
           <input
             type="text"

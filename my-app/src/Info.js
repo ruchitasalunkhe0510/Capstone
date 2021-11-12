@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./User_Info.css";
+import "./Info.css";
 
 export class Info extends Component {
   constructor(props) {
@@ -68,6 +68,7 @@ export class Info extends Component {
         </div>
         <div className="geting_form">
           <form>
+            {/* <div className="info1"> */}
             <h5>FirstName:</h5>
             <input
               type="text"
@@ -84,6 +85,7 @@ export class Info extends Component {
               onChange={this.handleChange}
               placeholder="LastName"
             />
+
             <h5>Gender :</h5>
             <select
               name="gender"
@@ -147,6 +149,7 @@ export class Info extends Component {
               value={medicalIssue}
               onChange={this.handleChange}
             />
+            {/* </div> */}
             <p className="btn">
               <button className="submit-btn" onClick={this.handleSubmit}>
                 Submit
