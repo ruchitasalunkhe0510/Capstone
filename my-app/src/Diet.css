@@ -1,6 +1,6 @@
 .diet {
   /* text-align: center; */
-  background-color: #ddd;
+  background-color: white;
 }
 .diet_title {
   color: lightcoral;
@@ -9,7 +9,7 @@
   padding-top: 10px;
 }
 .breakfast {
-  background-color: rgb(243, 233, 233);
+  background-color: #ddd;
   padding-top: 10px;
   margin-left: 300px;
   height: 70%;
@@ -29,7 +29,7 @@
   /* z-index: 1;
   transform: scale(0.8);
   transition: all 0.1s ease-in-out; */
-  background-color: #ffffff10;
+  background-color: #ddd;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }

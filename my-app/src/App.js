@@ -5,7 +5,7 @@ import Login from "./Login";
 import SignUp from "./SignUp";
 import Home from "./Home";
 import Display from "./Display";
-import Diet from "./Diet";
+import Diets from "./Diets";
 import DietPlan from "./DietPlan";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -16,8 +16,8 @@ function App() {
       <Router>
         <Home />
         <Switch>
-          <Route exact path="/diet">
-            <Diet />
+          <Route exact path="/diets">
+            <Diets />
             {/* <DietPlan /> */}
           </Route>
           <Route exact path="/dietplan">

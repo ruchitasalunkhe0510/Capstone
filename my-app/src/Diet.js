@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Diet.css";
 import AutorenewIcon from "@material-ui/icons/Autorenew";
 // import CheckBoxIcon from "@material-ui/icons/CheckBox";
 import BlurCircularIcon from "@material-ui/icons/BlurCircular";
 // import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
-function Diet() {
+const Diet = () => {
+  const [name, setName] = useState("");
+  function handleUser(name) {
+    console.log(`hi there, ${name}`);
+  }
   return (
     <div className="diet">
       <div className="diet_title">
@@ -90,7 +94,9 @@ function Diet() {
           <small className="check">
             <input type="checkbox" /> I ate this
           </small>
-          <AutorenewIcon />
+          <button onClick={() => handleUser("check")}>
+            <AutorenewIcon />
+          </button>
           <BlurCircularIcon />
         </div>
         <div className="breakfast2">
@@ -109,6 +115,6 @@ function Diet() {
       </div>
     </div>
   );
-}
+};
 
 export default Diet;

@@ -41,7 +41,7 @@ function DietPlan() {
 
         <div className="middle">
           <h3>This day doesn't have a meal plan yet.</h3>
-          <Link to={"/diet"}>
+          <Link to={"/diets"}>
             <button>
               {" "}
               <AutorenewIcon />
