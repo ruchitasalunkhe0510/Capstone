@@ -4,6 +4,7 @@ import Info from "./Info";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import Home from "./Home";
+import Main from "./Main";
 import Display from "./Display";
 import Diets from "./Diets";
 import DietPlan from "./DietPlan";
@@ -16,6 +17,9 @@ function App() {
       <Router>
         <Home />
         <Switch>
+          <Route exact path="/main">
+            <Main />
+          </Route>
           <Route exact path="/diets">
             <Diets />
             {/* <DietPlan /> */}
@@ -23,6 +27,7 @@ function App() {
           <Route exact path="/dietplan">
             <DietPlan />
           </Route>
+
           <Route path="/login">
             <Login />
           </Route>

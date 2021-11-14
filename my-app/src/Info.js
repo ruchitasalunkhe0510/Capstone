@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Info.css";
+// import Main from "./Main";
+import { Link } from "react-router-dom";
 
 export class Info extends Component {
   constructor(props) {
@@ -150,10 +152,13 @@ export class Info extends Component {
               onChange={this.handleChange}
             />
             {/* </div> */}
+
             <p className="btn">
-              <button className="submit-btn" onClick={this.handleSubmit}>
-                Submit
-              </button>
+              <Link to={"/main"}>
+                <button className="submit-btn" onClick={this.handleSubmit}>
+                  Submit
+                </button>
+              </Link>
             </p>
           </form>
         </div>
