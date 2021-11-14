@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./Diet.css";
-import Breakfast from "./Breakfast";
+import Dinner from "./Dinner";
 import AutorenewIcon from "@material-ui/icons/Autorenew";
 import BlurCircularIcon from "@material-ui/icons/BlurCircular";
 
 function Diets() {
-  const [data, setdata] = useState(Breakfast);
+  const [data, setdata] = useState(Dinner);
   const [index, setIndex] = useState(0);
-  console.log(Breakfast);
+  console.log(Dinner);
   // function handlesubmit() {
   //   // const item = e.target.value;
   //   // console.log(item);
@@ -21,7 +21,7 @@ function Diets() {
   const listItems = data.map((item) => {
     return (
       <div className="breakfast2">
-        <img src={item.img} alt="brakfast_image" />
+        <img src={item.img} alt="Lunch_image" />
         <p>{item.title}</p>
       </div>
     );

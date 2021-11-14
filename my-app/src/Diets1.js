@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./Diet.css";
-import Breakfast from "./Breakfast";
+import Lunch from "./Lunch";
 import AutorenewIcon from "@material-ui/icons/Autorenew";
 import BlurCircularIcon from "@material-ui/icons/BlurCircular";
 
 function Diets() {
-  const [data, setdata] = useState(Breakfast);
+  const [data, setdata] = useState(Lunch);
   const [index, setIndex] = useState(0);
-  console.log(Breakfast);
+  console.log(Lunch);
   // function handlesubmit() {
   //   // const item = e.target.value;
   //   // console.log(item);
