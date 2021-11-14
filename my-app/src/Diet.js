@@ -11,9 +11,9 @@ const Diet = () => {
   }
   return (
     <div className="diet">
-      <div className="diet_title">
+      {/* <div className="diet_title">
         <h2>Meal Planner</h2>
-      </div>
+      </div> */}
       <div className="breakfast">
         <h4>Breakfast</h4>
         <div className="breakfast1">
