@@ -25,11 +25,11 @@ function Home() {
           Healthy Diet
         </span>
       </div> */}
-      <Link to={"/main"}>
-        <div className="home_second">
-          <span>Home</span>
-        </div>
-      </Link>
+      {/* <Link to={"/main"}> */}
+      <div className="home_second">
+        <span>Home</span>
+      </div>
+      {/* </Link> */}
       <div className="home_third">
         <span>About us</span>
       </div>

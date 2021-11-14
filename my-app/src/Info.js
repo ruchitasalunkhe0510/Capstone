@@ -155,7 +155,7 @@ export class Info extends Component {
 
             <p className="btn">
               {/* <Link to="/main"> */}
-              <Link to={"/main"}>
+              <Link to={"/premium"}>
                 <button className="submit-btn">
                   {/* onClick={this.handleSubmit}> */}
                   Submit

@@ -12,6 +12,7 @@ import Workout from "./Workout";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Male from "./Male";
 import Female from "./Female";
+import Premium from "./Premium";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       <Router>
         <Home />
         <Switch>
+          <Route exact path="/premium">
+            <Premium />
+          </Route>
           <Route exact path="/female">
             <Female />
           </Route>
