@@ -59,7 +59,9 @@ class Login extends Component {
             placeholder="Password..."
           />
           <br />
-          <input type="submit" value="Submit" onClick={SignUp} />
+          <Link to={"/info"}>
+            <input type="submit" value="Submit" onClick={SignUp} />
+          </Link>
         </form>
         <div className="login_btn">
           <Link to="/SignUp">

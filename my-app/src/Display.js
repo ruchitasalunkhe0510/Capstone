@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Info from "./Info";
+// import Info from "./Info";
 import "./Display.css";
 import Footer from "./Footer";
 function Display() {
@@ -28,10 +28,8 @@ function Display() {
             deficit.
           </p>
           {/* <div className="btn_start"> */}
-          <Link to="/Info">
-            <button className="btn_start" onClick={Info}>
-              Get Start
-            </button>
+          <Link to="/login">
+            <button className="btn_start">Get Start</button>
           </Link>
           {/* </div> */}
         </div>
