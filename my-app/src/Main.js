@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main.css";
+import { Link } from "react-router-dom";
 function Main() {
   return (
     <div>
@@ -11,7 +12,10 @@ function Main() {
         /> */}
         <div className="main1">
           <p>Select </p>
-          <button className="btn1">Diet</button>
+          {/* <Link to="/Diet"> */}
+           <Link to={"/dietplan"}>
+          <button className="diet_plan1">Diet</button>
+          </Link>
           <button className="btn2">Exercise</button>
         </div>
       </div>

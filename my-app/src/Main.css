@@ -1,6 +1,6 @@
 .ad {
   height: 60%;
-  width: 90%;
+  /* width: 90%; */
   background-position: center;
 
   /* background-image: linear-gradient(rgba(0, 0, 100, 0.8), rgba(0, 0, 100, 0.8)),
@@ -41,9 +41,9 @@
   border-radius: 35px;
   /* margin-right: 20px; */
 }
-.btn1 {
+.diet_plan1 {
   margin-right: 40px;
-  width: 50%;
+  /* width: 50%; */
   font-size: 20px;
   background-color: #ddd;
   color: black;

@@ -39,10 +39,12 @@ function Home() {
           <ExpandMoreIcon />
         </div>
       </Link>
-      <div className="home_five">
-        <span>Exercise Plan</span>
-        <ExpandMoreIcon />
-      </div>
+      <Link to={"/workout"}>
+        <div className="home_five">
+          <span>Exercise Plan</span>
+          <ExpandMoreIcon />
+        </div>
+      </Link>
       <Link to={"/login"}>
         <div className="home_six">
           <button>Login</button>
