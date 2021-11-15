@@ -200,7 +200,9 @@ function Premium() {
                   <br />
                 </span>
               </div>
-              <button className="btn1">Get Started</button>
+              <Link to="/card">
+                <button className="btn1">Get Started</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -58,6 +58,7 @@ class SignUp extends Component {
           <h1>Login Page</h1>
           <label>Name :</label>{" "}
           <input
+            className="login1"
             type="text"
             value={this.state.name}
             onChange={this.namehandler}
@@ -66,6 +67,7 @@ class SignUp extends Component {
           <br />
           <label>Email-id :</label>{" "}
           <input
+            className="login1"
             type="text"
             value={this.state.email}
             onChange={this.emailhandler}
@@ -74,6 +76,7 @@ class SignUp extends Component {
           <br />
           <label>Mobile No :</label>{" "}
           <input
+            className="login1"
             type="text"
             value={this.state.mobile}
             onChange={this.mobilehandler}
@@ -82,13 +85,14 @@ class SignUp extends Component {
           <br />
           <label>Password :</label>{" "}
           <input
+            className="login2"
             type="password"
             value={this.state.password}
             onChange={this.passwordhandler}
             placeholder="Password..."
           />
           <br />
-          <input type="submit" value="Submit" />
+          <input className="login3" type="submit" value="Submit" />
         </form>
         <div className="login_btn">
           <Link to="/login">

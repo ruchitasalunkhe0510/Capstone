@@ -73,6 +73,7 @@ export class Info extends Component {
             {/* <div className="info1"> */}
             <h5>FirstName:</h5>
             <input
+              className="info1"
               type="text"
               name="firstName"
               value={firstName}
@@ -81,6 +82,7 @@ export class Info extends Component {
             />
             <h5>lastName</h5>
             <input
+              className="info1"
               type="text"
               name="lastName"
               value={lastName}
@@ -101,6 +103,7 @@ export class Info extends Component {
             </select>
             <h5>age</h5>
             <input
+              className="info1"
               type="text"
               name="age"
               value={age}
@@ -108,6 +111,7 @@ export class Info extends Component {
             />
             <h5>Height</h5>
             <input
+              className="info1"
               type="number"
               name="height"
               value={height}
@@ -116,6 +120,7 @@ export class Info extends Component {
 
             <h5>Weight</h5>
             <input
+              className="info1"
               type="number"
               name="weight"
               value={weight}
@@ -123,6 +128,7 @@ export class Info extends Component {
             />
             <h5>Ideal Weight</h5>
             <input
+              className="info1"
               type="number"
               name="ideal"
               value={ideal}
@@ -130,6 +136,7 @@ export class Info extends Component {
             />
             <h5>State</h5>
             <input
+              className="info1"
               type="text"
               name="state"
               value={state}
@@ -138,6 +145,7 @@ export class Info extends Component {
             />
             <h5>City</h5>
             <input
+              className="info1"
               type="text"
               name="city"
               value={city}
@@ -146,6 +154,7 @@ export class Info extends Component {
             />
             <h5>Medical-Issue</h5>
             <input
+              className="info1"
               type="text"
               name="medicalIssue"
               value={medicalIssue}
@@ -156,7 +165,7 @@ export class Info extends Component {
             <p className="btn">
               {/* <Link to="/main"> */}
               <Link to={"/premium"}>
-                <button className="submit-btn">
+                <button className="info_btn">
                   {/* onClick={this.handleSubmit}> */}
                   Submit
                 </button>

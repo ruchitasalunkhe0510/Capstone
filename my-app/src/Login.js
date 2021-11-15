@@ -45,6 +45,7 @@ class Login extends Component {
           <h1>SignUp Page</h1>
           <label>Email-id :</label>{" "}
           <input
+            className="login1"
             type="text"
             value={this.state.email}
             onChange={this.emailhandler}
@@ -53,6 +54,7 @@ class Login extends Component {
           <br />
           <label>Password :</label>{" "}
           <input
+            className="login2"
             type="password"
             value={this.state.password}
             onChange={this.passwordhandler}
@@ -60,7 +62,12 @@ class Login extends Component {
           />
           <br />
           <Link to={"/info"}>
-            <input type="submit" value="Submit" onClick={SignUp} />
+            <input
+              className="login3"
+              type="submit"
+              value="Submit"
+              onClick={SignUp}
+            />
           </Link>
         </form>
         <div className="login_btn">

@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Male from "./Male";
 import Female from "./Female";
 import Premium from "./Premium";
+import Card from "./Card";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       <Router>
         <Home />
         <Switch>
+          <Route exact path="/card">
+            <Card />
+          </Route>
           <Route exact path="/premium">
             <Premium />
           </Route>
