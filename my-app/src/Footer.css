@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1300px;
+  max-width: 1530px;
   /* margin: 10 auto; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  grid-gap: 5px;
+  grid-gap: 15px;
   background: black;
   color: white;
   padding-top: 13px;

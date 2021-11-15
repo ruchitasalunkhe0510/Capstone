@@ -14,6 +14,7 @@ import Male from "./Male";
 import Female from "./Female";
 import Premium from "./Premium";
 import Card from "./Card";
+import About from "./About";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       <Router>
         <Home />
         <Switch>
+        <Route exact path="/aboutus">
+            <About />
+          </Route>
           <Route exact path="/card">
             <Card />
           </Route>

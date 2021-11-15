@@ -28,7 +28,8 @@ h1 {
 .login {
   /* padding-top: 10px; */
   background-color: cadetblue;
-  margin-left: 390px;
+  margin-left: 450px;
+  margin-top: 80px;
   height: 150%;
   width: 35%;
   display: flex;

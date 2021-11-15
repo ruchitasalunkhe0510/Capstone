@@ -49,11 +49,13 @@ class SignUp extends Component {
   render() {
     return (
       <div className="login">
+        <Link to="/">
         <img
           className="login_logo"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0i8ilFf2usonsLDFkbFQqXTuYq--BVkdn1Q&usqp=CAU"
           alt="logo"
         />
+        </Link>
         <form onSubmit={this.handleSubmit}>
           <h1>Login Page</h1>
           <label>Name :</label>{" "}
@@ -96,7 +98,7 @@ class SignUp extends Component {
         </form>
         <div className="login_btn">
           <Link to="/login">
-            <button className="btn">already have an account</button>
+            <button className="btn">Already have an Account?</button>
           </Link>
         </div>
       </div>

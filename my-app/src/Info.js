@@ -152,7 +152,7 @@ export class Info extends Component {
               onChange={this.handleChange}
               placeholder="City"
             />
-            <h5>Medical-Issue</h5>
+            <h5>Medical-Issue (if Any)</h5>
             <input
               className="info1"
               type="text"
