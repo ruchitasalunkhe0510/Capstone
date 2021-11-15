@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Card.css";
+import { Link } from "react-router-dom";
 // eslint-disable-next-line
 //import Cards from './Cards';
 // import 'react-credit-card/es/styles-compiled.css'
@@ -75,13 +76,15 @@ function Card() {
         onChange={(e) => setCvv(e.target.value)}
         onFocus={(e) => setFocus(e.target.name)}
       />
-      <div className="card_btn">
-        <form onSubmit={handleSubmit}>
-          <button onClick="{getData}" type="Submit" className="btnnn">
-            Submit
-          </button>
-        </form>
-      </div>
+      <Link to="main">
+        <div className="card_btn">
+          <form onSubmit={handleSubmit}>
+            <button onClick="{getData}" type="Submit" className="btnnn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </Link>
     </div>
   );
 }
