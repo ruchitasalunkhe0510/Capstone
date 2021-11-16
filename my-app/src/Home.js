@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import HelpIcon from "@material-ui/icons/Help";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 // import Diet from "./Diet";
 function Home() {
   var history = useHistory();

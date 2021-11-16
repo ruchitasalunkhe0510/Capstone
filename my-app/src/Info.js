@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Info.css";
 // import Main from "./Main";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export class Info extends Component {
   constructor(props) {
@@ -29,7 +30,21 @@ export class Info extends Component {
 
   handleSubmit = (e) => {
     console.log(this.state);
+      axios.post("/userinfo", {
+        firstName: firstName,
+        lastName: lastName,
+        gender: gender,
+        age: age,
+        weight: weight,
+        ideal: ideal,
+        height: height,
+        state: state,
+        city: city,
+        medicalIssue: medicalIssue,
+      })
     e.preventDefault();
+
+    
     this.resetForm();
   };
 
@@ -164,12 +179,11 @@ export class Info extends Component {
 
             <p className="btn">
               {/* <Link to="/main"> */}
-              <Link to={"/premium"}>
-                <button className="info_btn">
-                  {/* onClick={this.handleSubmit}> */}
+    
+                <button className="info_btn" onClick={this.handleSubmit}>
                   Submit
                 </button>
-              </Link>
+
             </p>
           </form>
         </div>
