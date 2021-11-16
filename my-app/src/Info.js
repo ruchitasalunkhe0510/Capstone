@@ -30,6 +30,8 @@ export class Info extends Component {
   handleSubmit = (e) => {
     console.log(this.state);
     e.preventDefault();
+
+    
     this.resetForm();
   };
 
@@ -152,7 +154,7 @@ export class Info extends Component {
               onChange={this.handleChange}
               placeholder="City"
             />
-            <h5>Medical-Issue</h5>
+            <h5>Medical-Issue (if Any)</h5>
             <input
               className="info1"
               type="text"
@@ -164,12 +166,11 @@ export class Info extends Component {
 
             <p className="btn">
               {/* <Link to="/main"> */}
-              <Link to={"/premium"}>
-                <button className="info_btn">
-                  {/* onClick={this.handleSubmit}> */}
+    
+                <button className="info_btn" onClick={this.handleSubmit}>
                   Submit
                 </button>
-              </Link>
+
             </p>
           </form>
         </div>

@@ -3,6 +3,7 @@ import "./Diet.css";
 import Lunch from "./Lunch";
 import AutorenewIcon from "@material-ui/icons/Autorenew";
 import BlurCircularIcon from "@material-ui/icons/BlurCircular";
+import axios from "axios";
 
 function Diets() {
   const [data, setdata] = useState(Lunch);

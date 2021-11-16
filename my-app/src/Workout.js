@@ -1,7 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./Workout.css";
+import './Male';
 function Workout() {
+  var history = useHistory();
   return (
     <div>
       <div className="workout">
@@ -11,12 +13,13 @@ function Workout() {
         </p>
         <h5 className="workout5">Select Your Gender?</h5>
 
-        <Link to={"/male"}>
-          <button className="workout1">Male</button>
-        </Link>
-        <Link to={"/female"}>
-          <button className="workout2">Female</button>
-        </Link>
+          <button className="workout1" onClick={() => {
+            history.push("/male")
+          }}>Male</button>
+        
+          <button className="workout2" onClick={() => {
+            history.push("/female")
+          }}>Female</button>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 import SignUp from "./SignUp";
+import axios from "axios";
 
 class Login extends Component {
   constructor(props) {
@@ -36,14 +37,16 @@ class Login extends Component {
   render() {
     return (
       <div className="login">
+        <Link to="/">
         <img
           className="login_logo"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0i8ilFf2usonsLDFkbFQqXTuYq--BVkdn1Q&usqp=CAU"
           alt="logo"
         />
+        </Link>
         <form onSubmit={this.handleSubmit}>
           <h1>SignUp Page</h1>
-          <label>Email-id :</label>{" "}
+          <label>Email :</label>{" "}
           <input
             className="login1"
             type="text"

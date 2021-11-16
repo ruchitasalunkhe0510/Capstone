@@ -13,7 +13,7 @@
 } */
 .workout3 {
   font-size: 37px;
-  color: rgb(226, 43, 43);
+  color: orange;
 }
 .workout5 {
   font-size: 30px;
@@ -21,7 +21,7 @@
 }
 .workout4 {
   font-size: 40px;
-  color: rgb(226, 110, 43);
+  color: white;
   margin-top: 10%;
   margin-left: 5%;
 }
@@ -34,6 +34,7 @@
 .workout2 {
   width: 150px;
   height: 50px;
+  cursor: pointer;
   border: #ddd solid 2px;
   border-radius: 35px;
   box-sizing: border-box;
@@ -47,7 +48,7 @@
   font-size: 1.5rem;
 }
 .workout {
-  background-image: url("C:\Capstone_Project\Capstone\my-app\src\exersice.jpg");
+  background-image: url("./exersice.jpg");
   text-align: center;
   position: fixed;
   min-width: 100%;

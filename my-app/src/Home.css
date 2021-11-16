@@ -1,6 +1,21 @@
 .body {
   margin: 0;
 }
+
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+.logo_name {
+  margin-top: 20px;
+  padding-left: 10px;
+  text-align: center;
+}
 .home {
   background-color: cadetblue;
   display: flex;
@@ -22,6 +37,7 @@
 .home_first > img {
   width: 75px;
   object-fit: contain;
+  cursor: pointer;
   /* align-items: center;
    height: 30px */
 }
@@ -42,28 +58,24 @@
 }
 .home_second {
   color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  outline: none;
 }
 .home_third {
   color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  outline: none;
 }
 .home_forth {
   color: white;
   cursor: pointer;
-  font-weight: 500;
-  border: none;
-  outline: none;
-}
-.home_forth > button {
-  color: white;
-  border: none;
-  outline: none;
   font-weight: 600;
-}
-.home_forth > .MuiSvgIcon-root {
-  color: white;
-  /* display: flex; */
-  align-items: center;
-  margin-top:10px;
+  border: none;
+  outline: none;
 }
 .home_five {
   color: white;
@@ -71,10 +83,7 @@
   font-weight: 600;
   align-items: center;
 }
-.home_five > .MuiSvgIcon-root {
-  color: white;
-  align-items: center;
-}
+
 .home_six1 {
   color: white;
   cursor: pointer;

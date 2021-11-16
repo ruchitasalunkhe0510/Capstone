@@ -1,7 +1,7 @@
 .Apppp {
   text-align: center;
   /* background-color: rgba(150, 75, 204, 0.486); */
-  background-image: url("C:\Capstone_Project\Capstone\my-app\src\debit_back.webp");
+  background-image: url("./debit_back.webp");
   position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@
   margin-left: 30px;
   margin-top: 5px;
   background-color: #3a0b2a;
-  background-image: url("C:\Capstone_Project\Capstone\my-app\src\debit_card.jpg");
+  background-image: url("./debit_card.jpg");
   height: 28%;
   width: 20%;
   padding-left: 12px;
