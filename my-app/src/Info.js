@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./Info.css";
 // import Main from "./Main";
 import { Link } from "react-router-dom";
-import axios from "axios";
 
 export class Info extends Component {
   constructor(props) {
@@ -30,18 +29,6 @@ export class Info extends Component {
 
   handleSubmit = (e) => {
     console.log(this.state);
-      axios.post("/userinfo", {
-        firstName: firstName,
-        lastName: lastName,
-        gender: gender,
-        age: age,
-        weight: weight,
-        ideal: ideal,
-        height: height,
-        state: state,
-        city: city,
-        medicalIssue: medicalIssue,
-      })
     e.preventDefault();
 
     
