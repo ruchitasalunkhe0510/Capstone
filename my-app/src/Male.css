@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   background-color: rgba(152, 95, 160, 0.432);
-  padding-top: 300px;
+  /* padding-top: 300px; */
 }
 /*.container {
   position: relative;
@@ -59,13 +59,16 @@ h3{
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
   margin-left: 50px;
   margin-top: 20px;
   justify-content: center;
   display: inline;
-  grid: 150px auto/ 150px;
+  /* grid: 150px auto/ 150px; */
+  /* display: grid; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
 }
 .Video-responsive2 {
   overflow: hidden;
