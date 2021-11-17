@@ -5,9 +5,7 @@ import AutorenewIcon from "@material-ui/icons/Autorenew";
 import BlurCircularIcon from "@material-ui/icons/BlurCircular";
 import ForumIcon from "@material-ui/icons/Forum";
 import AddBoxIcon from "@material-ui/icons/AddBox";
-// import CreateIcon from "@material-ui/icons/Create";
-// import LockIcon from "@material-ui/icons/Lock";
-// import AssignmentIcon from "@material-ui/icons/Assignment";
+
 import AssignmentReturnedIcon from "@material-ui/icons/AssignmentReturned";
 function DietPlan() {
   return (

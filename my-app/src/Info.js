@@ -31,22 +31,21 @@ export class Info extends Component {
     console.log(this.state);
     e.preventDefault();
 
-    
     this.resetForm();
   };
 
   resetForm = () => {
     this.setState({
-      firstName: "",
-      lastName: "",
-      gender: "",
-      age: "",
-      weight: "",
-      ideal: "",
-      height: "",
-      state: "",
-      city: "",
-      medicalIssue: "",
+      firstName: "rutuja",
+      lastName: "hfredfhj",
+      gender: "female",
+      age: "22",
+      weight: "65",
+      ideal: "55",
+      height: "5.2",
+      state: "maharashtra",
+      city: "pune",
+      medicalIssue: "No",
     });
   };
 
@@ -166,9 +165,8 @@ export class Info extends Component {
 
             <p className="btn">
               <Link to="/main">
-    
-                <button className="info_btn"> 
-                {/* // onClick={this.handleSubmit}> */}
+                <button className="info_btn">
+                  {/* // onClick={this.handleSubmit}> */}
                   Submit
                 </button>
               </Link>
