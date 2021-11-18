@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Premium.css";
 import StripeCheckout from "react-stripe-checkout";
 import { Link } from "react-router-dom";
+import Box from "@material-ui/core/Box";
 
 function Premium() {
   const [product, setproduct] = useState({
@@ -27,16 +28,45 @@ function Premium() {
       .catch((error) => console.log("error"));
   };
   return (
-    <div className="premium">
-      <h3 className="pre4">Try Premium free for 15 days</h3>
+    <div className="abc1">
+      <h1 className="head2">
+        Try Premium free for 15 days
+        <br />
+      </h1>
+
+      <div className="row-sm-6">
+        <Box color="red" p={1} className="san1">
+          <h1 className="qwe1">
+            $0<span className="qwe2">/mo</span>
+          </h1>
+          <br />
+          <br />
+          âœ“ Generate daily meal plans
+          <br />
+          âœ“ Track what you eat
+          <br />
+          âœ“ Create custom foods and recipes
+          <br />
+          âœ“ Schedule recurring foods
+          <br />
+          <div className="zzz">
+            âœ“ Plan a week of meals at a time
+            <br />
+            âœ“ Automatic grocery lists
+            <br />
+            âœ“ Automatic leftovers
+            <br />
+            âœ“ Customize every day of the week
+            <br />
+            âœ“ Print and email your plans
+            <br />
+            âœ“ Grocery delivery
+            <br />
+          </div>
+        </Box>
+      </div>
       <Link to="/main">
-        <div className="free">
-          <button className="pre1">Get Start for free</button>
-          <p>Genrate daily meal plans</p>
-          <p>Track what you eat</p>
-          <p>Create custom foods and recipes</p>
-          <p>Schedule recurring foods</p>
-        </div>
+        <button className="arp1">Get Started</button>
       </Link>
       <StripeCheckout
         stripeKey="pk_test_51JbTKCSFhbD0CPrvITksDesRTkVXGbUWkOeqqZ5zbgaXQlEWWOnhbookjo2EST3Wzio2Zxy8ecnqDGeu8PGKvs2e00cbkGmSoC"
@@ -44,13 +74,40 @@ function Premium() {
         name="BUY Diet Plan"
         amount={product.price * 100}
       >
-        <div className="paid">
-          <button className="pre2">Buy this product</button>
-          <p>Genrate daily meal plans</p>
-          <p>Track what you eat</p>
-          <p>Create custom foods and recipes</p>
-          <p>Schedule recurring foods</p>
+        <div className="box2">
+          <Box color="rgb(190, 51, 148)" p={1} className="san2">
+            <h1 className="qwe1">
+              $4.99<span className="qwe2">/mo</span>
+            </h1>
+            <br />
+            <br />
+            <div className="www">
+              âœ“ Generate daily meal plans
+              <br />
+              âœ“ Track what you eat
+              <br />
+              âœ“ Create custom foods and recipes
+              <br />
+              âœ“ Personalize the generator
+              <br />
+              âœ“ Schedule recurring foods
+              <br />
+              âœ“ Plan a week of meals at a time
+              <br />
+              âœ“ Automatic grocery lists
+              <br />
+              âœ“ Automatic leftovers
+              <br />
+              âœ“ Customize every day of the week
+              <br />
+              âœ“ Print and email your plans
+              <br />
+              âœ“ Grocery delivery
+              <br />
+            </div>
+          </Box>
         </div>
+        <button className="arp2">Buy this product</button>
       </StripeCheckout>
     </div>
   );
